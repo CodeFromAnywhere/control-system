@@ -1,0 +1,2 @@
+- [ ] track if the code runs without typescript and eslint-prettier errors (and other checks like tests, possibly). we can probably just let the user set some command for this
+- [ ] **_git watch_** Possibility to automatically push and pull every x seconds (editable in config). Only commit and push automatically if there are no errors and the code runs and the tests pass (`git add . && git commit -m "Improvements" && git pull && git push`, no stash needed)

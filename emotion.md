@@ -1,0 +1,1 @@
+Rondinelli Morais has an excellent emotion detection system for realtime. Can be used to track emotion of the computer user using the webcam, if we can make this easily run locally, and this data is fundamental feedback for many things.
