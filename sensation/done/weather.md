@@ -1,0 +1,1 @@
+based on weatherInfo (do research) calculate feelingTemperature, sunnyness, rainyness, cloudyness, windyness, kiteability, bbqAbility, codeFromNatureAbility, dresscode. Should return ranges in some cases.
