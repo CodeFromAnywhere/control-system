@@ -1,5 +1,5 @@
-import { fs } from "from-anywhere/node";
-import { path } from "from-anywhere/node";
+import * as path from "path";
+import * as fs from "fs";
 import { readJsonFile } from "read-json-file";
 export const importGhostBlogs = async (
   absoluteGhostJsonFilePath: string,

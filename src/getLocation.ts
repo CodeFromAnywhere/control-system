@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import { log } from "log";
-import { execAsync } from "child-process-helper";
 
 ////
 /**

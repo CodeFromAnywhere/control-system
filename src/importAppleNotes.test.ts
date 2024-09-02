@@ -1,5 +1,4 @@
-import { path } from "from-anywhere/node";
-import { getRootPath } from "from-anywhere/node";
+import * as path from "path";
 import { importAppleNotes } from "./importAppleNotes.js";
 const test = () => {
   const appleNotesFolder = path.join(

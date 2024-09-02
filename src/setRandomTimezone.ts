@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import { execSync } from "child_process";
 import { readFileSync } from "fs";
-import path from "path";
-import { StandardFunctionConfig } from "from-anywhere/types";
+import * as path from "path";
+import { StandardFunctionConfig } from "from-anywhere";
 
 /**
 

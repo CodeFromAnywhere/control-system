@@ -1,12 +1,7 @@
 #!/usr/bin/env node
 import { execSync } from "child_process";
-import { fs } from "from-anywhere/node";
-import { operations } from "sdk-operations";
-import { path as nodePath } from "from-anywhere/node";
-import { path } from "from-anywhere/node";
-import { getOperationPath } from "from-anywhere/node";
-import { getProjectRoot } from "from-anywhere/node";
-import { StandardFunctionConfig } from "from-anywhere/types";
+import * as fs from "fs";
+import * as path from "path";
 
 export type OpenableFile = {
   projectRelativePath?: string;

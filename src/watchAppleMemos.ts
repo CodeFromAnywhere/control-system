@@ -1,6 +1,6 @@
 import { compressConvert } from "ffmpeg-util";
-import { fs } from "from-anywhere/node";
-import { path } from "from-anywhere/node";
+import * as path from "path";
+import * as fs from "fs";
 import { getProjectRoot } from "from-anywhere/node";
 import { platform } from "os";
 import { StandardFunctionConfig } from "from-anywhere/types";

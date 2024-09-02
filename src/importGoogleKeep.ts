@@ -1,13 +1,12 @@
-import { fs } from "from-anywhere/node";
-import { path } from "from-anywhere/node";
-import html2md from "html-to-md";
-import { readJsonFile } from "read-json-file";
+import * as path from "path";
+import * as fs from "fs";
+
 import { readJsonFileSync } from "read-json-file";
 export const importGoogleKeep = async (
   googleNotesFolder: string,
   destinationFolder?: string,
 ) => {
-  const names = await fs.readdir(googleNotesFolder, "utf8");
+  const names = fs.readdirSync(googleNotesFolder, "utf8");
 
   if (destinationFolder && !fs.existsSync(destinationFolder)) {
     await fs.mkdir(destinationFolder, { recursive: true });

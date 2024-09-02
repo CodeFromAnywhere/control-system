@@ -1,2 +1,2 @@
-import { cmdSpaceListener } from "../cmdSpaceListener.js";
+import { cmdSpaceListener } from "./cmdSpaceListener.js";
 cmdSpaceListener();

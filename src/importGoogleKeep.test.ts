@@ -1,5 +1,5 @@
-import { path } from "from-anywhere/node";
-import { getRootPath } from "from-anywhere/node";
+import * as path from "path";
+
 import { importAppleNotes } from "./importAppleNotes.js";
 import { importGoogleKeep } from "./importGoogleKeep.js";
 const test = () => {

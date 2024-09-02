@@ -1,5 +1,5 @@
 import { fetchWithTimeout } from "from-anywhere";
-import { StandardFunctionConfig } from "from-anywhere/types";
+import { StandardFunctionConfig } from "from-anywhere";
 /**
  * Fetches google.com to check if we have an internet connection
  */

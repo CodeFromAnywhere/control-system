@@ -1,7 +1,8 @@
 import { textToText } from "ai-models";
-import { fs } from "from-anywhere/node";
-import { path } from "from-anywhere/node";
 import { findJsonInMarkdown } from "marked-util";
+import * as fs from "fs";
+import * as path from "path";
+
 export const getIsPrivate = async (contents: string) => {
   const isPrivateConventionPath = path.join(
     import.meta.dir,
@@ -10,7 +11,7 @@ export const getIsPrivate = async (contents: string) => {
     "is-private-convention.md",
   );
 
-  const conventionText = await fs.readTextFile(isPrivateConventionPath);
+  const conventionText = await fs.readFileSync(isPrivateConventionPath, "utf8");
   const tttResult = await textToText({
     text: `Consider the following text:
   

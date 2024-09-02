@@ -1,14 +1,16 @@
 #!/usr/bin/env node
 import { execSync } from "child_process";
-import { path } from "from-anywhere/node";
-import { fs } from "from-anywhere/node";
+import * as path from "path";
+import * as fs from "fs";
+import { homedir } from "os";
 import { pickRandomArrayItem } from "from-anywhere";
 
 export const getFolderNames = async (absoluteFolderPath: string) => {
-  const dirents = await fs.readdir(absoluteFolderPath, {
+  const dirents = fs.readdirSync(absoluteFolderPath, {
     withFileTypes: true,
     encoding: "utf8",
   });
+
   const folderNames = dirents
     .filter((dirent) => dirent.isDirectory())
     .map((dirent) => dirent.name);
@@ -21,7 +23,7 @@ export const getFolderNames = async (absoluteFolderPath: string) => {
 export const playMusic = async (config: { musicFolderName?: string }) => {
   const { musicFolderName } = config;
 
-  const musicFolderPath = path.join("/Users/king/Documents/wijnand/music");
+  const musicFolderPath = path.join(homedir(), "Music");
 
   const folderNames = await getFolderNames(musicFolderPath);
 
